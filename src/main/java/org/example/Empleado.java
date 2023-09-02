@@ -10,7 +10,7 @@ public class Empleado {
          this.apellido = apellido;
          this.salario = salario;
          this.tiempoContrato = tiempoContrato;
-         this.diasVacaciones = 0;
+         this.diasVacaciones = darVacaciones();
          this.hasVacaciones = false;
     }
     public String getNombre(){
@@ -54,14 +54,15 @@ public class Empleado {
         System.out.println("Nombre: "+ nombre + " "+apellido);
         System.out.println("Salario: "+salario);
         System.out.println("Tiempo del contrato: "+tiempoContrato);
-        System.out.println("Días de vacaciones: "+diasVacaciones);
-        System.out.println("Vacaciones disponibles: "+hasVacaciones);
+
     }
 
     public int pagarFiniquito(){
         if(tiempoContrato <= 0){
+
             throw new IllegalArgumentException("Ingrese un número mayor a 0");
-        }else {
+
+          }else {
             return (salario * tiempoContrato);
         }
     }
