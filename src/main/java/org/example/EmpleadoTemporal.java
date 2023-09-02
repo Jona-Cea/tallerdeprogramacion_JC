@@ -3,8 +3,8 @@ package org.example;
 public class EmpleadoTemporal extends Empleado {
     private boolean isRenovado, hasVacations;
 
-    public EmpleadoTemporal(String nombre, String apellido, int salario, int tiempoContrato, int diasVacaciones, boolean hasVacaciones){
-        super(nombre,apellido, salario, tiempoContrato, diasVacaciones, hasVacaciones);
+    public EmpleadoTemporal(String nombre, String apellido, int salario, int tiempoContrato){
+        super(nombre,apellido, salario, tiempoContrato);
         this.isRenovado = false;
         this.hasVacations = false;
     }
